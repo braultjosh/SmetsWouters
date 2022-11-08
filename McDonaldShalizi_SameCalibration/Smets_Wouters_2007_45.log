@@ -1,0 +1,148 @@
+Starting Dynare (version 5.2).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+WARNING: in the 'steady_state_model' block, variable 'ewma' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'epinfma' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'zcapf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'rkf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'kf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'pkf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'cf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'invef' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'yf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'labf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'wf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'rrf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'mc' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'zcap' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'rk' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'k' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'pk' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'c' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'inve' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'y' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'lab' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'pinf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'w' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'r' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'a' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'b' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'g' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'qs' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'ms' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'spinf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'sw' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'kpf' is not assigned a value
+WARNING: in the 'steady_state_model' block, variable 'kp' is not assigned a value
+Found 40 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+[Warning: Some of the parameters have no value (ccs, cinvs, crdpi) when using stoch_simul. If these
+parameters are not initialized in a steadystate file or a steady_state_model-block, Dynare may not
+be able to solve the model. Note that simul, perfect_foresight_setup, and perfect_foresight_solver
+do not automatically call the steady state file.] 
+
+MODEL SUMMARY
+
+  Number of variables:         40
+  Number of stochastic shocks: 7
+  Number of state variables:   20
+  Number of jumpers:           12
+  Number of static variables:  14
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables          ea        eb        eg       eqs        em     epinf        ew
+ea           0.152100  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+eb           0.000000  0.084100  0.000000  0.000000  0.000000  0.000000  0.000000
+eg           0.000000  0.000000  0.302500  0.000000  0.000000  0.000000  0.000000
+eqs          0.000000  0.000000  0.000000  0.168100  0.000000  0.000000  0.000000
+em           0.000000  0.000000  0.000000  0.000000  0.044100  0.000000  0.000000
+epinf        0.000000  0.000000  0.000000  0.000000  0.000000  0.022500  0.000000
+ew           0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.090000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  dy              dc           dinve          labobs         pinfobs              dw            robs
+Constant                    0.420000        0.420000        0.420000        5.990000        0.750000        0.420000        1.594435
+ewma(-1)                    1.565899       -1.853291       12.432051        1.851056       -9.660743       -2.265961       -2.752933
+epinfma(-1)                 1.166961        0.246375        2.856126        0.815705       -2.791890        3.446160       -0.650836
+yf(-1)                     -0.105790       -0.112981       -0.128430       -0.108575       -0.042220        0.002983        0.155149
+y(-1)                      -0.894210        0.112981        0.128430        0.108575        0.042220       -0.002983       -0.155149
+r(-1)                      -0.478840       -0.511389       -0.581317       -0.491445       -0.191099        0.013504        0.702256
+a(-1)                       0.124846        0.080382        0.685492       -1.078639       -0.231140        0.285180       -0.167225
+b(-1)                       0.446185        0.565854        0.287070        0.455323        0.042001        0.011168        0.103745
+g(-1)                       1.004133        0.009607       -0.343004        1.029688        0.066763       -0.020327        0.081702
+qs(-1)                      0.626808        0.004717        2.581756        0.641292        0.131968        0.000682        0.088227
+ms(-1)                     -0.170279       -0.178890       -0.215173       -0.174850       -0.072518        0.005606        0.182455
+spinf(-1)                  -1.293499       -0.273090       -3.165826       -0.904154        3.094625       -3.819840        0.721409
+sw(-1)                     -1.598186        1.891503      -12.688382       -1.889222        9.859933        2.312682        2.809694
+kpf(-1)                     0.013949        0.013673        0.020816        0.014466        0.010181       -0.001765        0.003200
+kp(-1)                     -0.104372        0.003114        0.042864       -0.299144       -0.061784        0.049223       -0.040781
+cf(-1)                      0.009620        0.013114        0.003397        0.009736       -0.001873        0.000985       -0.064955
+invef(-1)                   0.006495        0.007836        0.005321        0.006639        0.001187        0.000059       -0.025290
+c(-1)                       0.547375       -0.120091       -0.152663        0.560291        0.036785       -0.001842        0.122589
+inve(-1)                    0.222566        0.039225       -0.186910        0.227597        0.016406        0.001261        0.050306
+pinf(-1)                   -0.056125       -0.069060       -0.138022       -0.085292        0.330352        0.253781        0.093615
+w(-1)                       0.016430       -0.033932       -0.116446       -0.064180        0.146652       -0.262320        0.049935
+ea                          0.197831        0.081880        0.667916       -1.015985       -0.228706        0.286609       -0.163078
+eb                          2.028114        2.572064        1.304865        2.069649        0.190912        0.050761        0.471568
+eg                          1.024626        0.009803       -0.350004        1.050702        0.068125       -0.020742        0.083369
+eqs                         0.870567        0.006552        3.585772        0.890684        0.183289        0.000947        0.122537
+em                         -0.709497       -0.745374       -0.896555       -0.728541       -0.302157        0.023360        0.760230
+epinf                      -0.406702       -0.214775       -0.577204       -0.265701        1.259620       -1.370287        0.317909
+ew                         -0.000484       -0.027758       -0.486635       -0.164058        0.487985        1.489751        0.154983
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+dy                0.409360        1.023726        1.048015       -0.011279       -0.235996
+dc                0.408510        0.880333        0.774987        0.076253       -0.197832
+dinve             0.411268        1.963973        3.857189       -0.004930       -0.072702
+labobs            6.155561        4.752494       22.586203       -0.164041       -0.148497
+pinfobs           0.779892        0.562057        0.315908        0.028731       -0.462445
+dw                0.418890        0.519329        0.269702        0.106449       -0.234592
+robs              1.649276        0.655646        0.429872       -0.273072       -0.217425
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         dy       dc    dinve   labobs  pinfobs       dw     robs
+dy           1.0000   0.7113   0.5695   0.1294  -0.0257   0.1219  -0.1125
+dc           0.7113   1.0000   0.2760   0.1449  -0.0403   0.1343  -0.0841
+dinve        0.5695   0.2760   1.0000   0.0108  -0.0404   0.0498  -0.1424
+labobs       0.1294   0.1449   0.0108   1.0000   0.0263   0.0860   0.2415
+pinfobs     -0.0257  -0.0403  -0.0404   0.0263   1.0000  -0.0537   0.6012
+dw           0.1219   0.1343   0.0498   0.0860  -0.0537   1.0000  -0.0675
+robs        -0.1125  -0.0841  -0.1424   0.2415   0.6012  -0.0675   1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE          1        2        3        4        5
+dy           0.2317   0.0800  -0.0354  -0.0166  -0.0556
+dc           0.3357   0.1429   0.0590   0.0498   0.0039
+dinve        0.5600   0.2585   0.0350  -0.0668  -0.1186
+labobs       0.9718   0.9360   0.9005   0.8692   0.8398
+pinfobs      0.8294   0.6917   0.5822   0.4965   0.4261
+dw          -0.0093   0.0301  -0.0037   0.0577   0.0171
+robs         0.9091   0.7781   0.6552   0.5610   0.4823
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                         ea                eb                eg               eqs                em             epinf                ew  Tot. lin. contr.
+dy                     4.33             38.68             31.19             19.44              4.54              0.87              4.25            103.30
+dc                     4.54             83.63              1.31              2.24              8.05              1.03              7.57            108.37
+dinve                  5.03              6.50              2.59             83.44              1.84              0.49              2.52            102.40
+labobs                 2.20              7.03             11.66              9.10              3.31              0.86             54.08             88.23
+pinfobs                9.01              5.78              3.99             12.05             13.72             13.78             44.20            102.52
+dw                     8.44              0.33              0.18              1.42              0.38             16.91             74.74            102.41
+robs                  10.88             26.30             13.88             39.50             15.01              2.40             22.10            130.06
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m01s
+Note: 33 warning(s) encountered in the preprocessor
+Note: warning(s) encountered in MATLAB/Octave code

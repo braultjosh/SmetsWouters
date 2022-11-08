@@ -1,0 +1,8 @@
+clear; clc;
+data = readtable('McDonaldShalizi_SimulatedOutput_R.csv');
+
+
+figure(1);
+subplot(2,1,1)
+plot(table2array(data(11:1010,5))
+subplot(2,1,2)
